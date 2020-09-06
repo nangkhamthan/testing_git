@@ -1,0 +1,43 @@
+//main funcional require
+
+-item managemnent
+	-brand / category / subcategory
+
+-sali  /  shopping
+
+-order management
+	-item / customer
+	-
+
+-customer management 
+
+
+brand table
+1| b1 |photo
+2| b2 |photo
+
+
+category table
+1 | frashio    | photo
+2 | electronic | photo
+
+subcategory table
+1 | baby wear | 1
+
+
+model relationship
+-one-to- one
+	-hasOne(p)
+	-belongsTo(c)
+
+-one-to-many
+	-hasMany(p)
+	-belongsTo(c)
+
+-many-to-many
+	-belongsToMany
+	-pivot table
+
+
+
+
