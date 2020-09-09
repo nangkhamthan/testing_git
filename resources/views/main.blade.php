@@ -124,8 +124,8 @@
 				                    	<img src="{{asset($item->photo)}}" class="img-fluid">
 				                        <p class="text-truncate">{{$item->name}}</p>
 				                        <p class="item-price">
-				                        	<strike>{{$item->price}}ks</strike> 
-				                        	<span class="d-block">{{$item->discount}}ks</span>
+				                        	<strike>{{$item->discount}}ks</strike> 
+				                        	<span class="d-block">{{$item->price}}ks</span>
 				                        </p>
 
 				                        <div class="star-rating">

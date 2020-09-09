@@ -166,22 +166,20 @@
 			        	@foreach($categories as $category)
 
 			          	<li class="dropdown-submenu">
-			          		<a class="dropdown-item" href="javascript:void(0)">
+			          		<a class="dropdown-item" href="#">
 			          			{{$category->name}}
 			          			<i class="icofont-rounded-right float-right"></i>
 			          		</a>
-
-				            <ul class="dropdown-menu">
-
-				            	@foreach($subcategories as $subcategory)
-				            	<h6 class="dropdown-header">
-
+			          		@foreach($subcategories as $subcategory)
+				            <ul class="dropdown-menu">				            	
+				            	<h5 class="dropdown-header">
 				            		@if($category->id==$subcategory->category_id)
 				            		{{$subcategory->name}}
 				            		@endif
-				            	</h6>
-				              	@endforeach
+				            	</h5>
+				              	
 				            </ul>
+				            @endforeach
 			          	</li>
 			          	@endforeach
 			        </ul> 

@@ -105,9 +105,8 @@ class BrandController extends Controller
         $request->validate([
             
             "name"=>'required',
-            "photo"=>'sometimes|mimes:.jpg,jpeg,png',
-            "oldphoto"=>'required|mimes:.jpg,jpeg,png',
-            
+            "photo"=>'required|mimes:.jpg,jpeg,png',
+            "oldphoto"=>'required|mimes:.jpg,jpeg,png'
         ]);
 
         //file upload ,if data
@@ -128,10 +127,9 @@ class BrandController extends Controller
         //data update
 
         
-        $brand->name=$request->name;
-        $brand->photo=$path;
-        $brand->save();
-
+        $item->name=$request->name;
+        $item->photo=$path;
+        $item->save();
         return redirect()->route('brands.index');
     }
 

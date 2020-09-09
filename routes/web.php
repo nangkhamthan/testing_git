@@ -53,7 +53,8 @@ Route::get('subcategory', 'pageController@subcategoryfun') ->name('subcategorypa
 
 
 Route::middleware('role:Admin')->group(function(){
-	Route::resource('orders','OrderController');
+
+
 
 Route::get('dashbord', 'backendController@dashbordfun') ->name('dashbordpage');
 
@@ -64,6 +65,7 @@ Route::resource('subcategories', 'SubcategoryController');
 
 });
 
+Route::resource('orders','OrderController');
     
 
 Auth::routes();

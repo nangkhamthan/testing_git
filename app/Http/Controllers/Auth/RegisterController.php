@@ -82,7 +82,7 @@ class RegisterController extends Controller
 
         return $user;
     }
-    protected function authenticated(Request $request, $user)
+    protected function redirectTo()
     {
         $roles = auth()->user()->getRoleNames();
 

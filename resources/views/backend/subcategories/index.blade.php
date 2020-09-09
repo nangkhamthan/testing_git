@@ -39,7 +39,7 @@
   			
   	</td>
     <td>
-      <form method="post" action="{{route('categories.destroy',$category->id)}}" onsubmit="return confirm('Are you sure?')" class="d-inline-block">
+      <form method="post" action="{{route('subcategories.destroy',$subcategory->id)}}" onsubmit="return confirm('Are you sure?')" class="d-inline-block">
               @csrf
               @method('DELETE')
                   <input type="submit" class="btn btn-danger" value="Delete">

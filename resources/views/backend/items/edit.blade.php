@@ -71,7 +71,7 @@
 				</div>
 			</div>
 			<div class="form-group row">
-				<label for="description" class="col-sm-2 col-form-label">Category</label>
+				<label for="description" class="col-sm-2 col-form-label">Brand</label>
 			<select  id="inputBrand" name="brand">
 				<optgroup label="Choose Brand">
 					@foreach($brands as $brand)

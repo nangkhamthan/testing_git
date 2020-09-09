@@ -29,7 +29,7 @@
                 @enderror
               </div>
             </div>
-            {{-- <div class="col-md-6">
+             <div class="col-md-6">
               <div class="form-group">
                 <label class="small mb-1" for="phone">Phone Number</label>
                 <input class="form-control py-4 @error('phone') is-invalid @enderror" id="phone" type="text" placeholder="Enter Phone Number" name="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus />
@@ -39,7 +39,7 @@
                     </span>
                 @enderror
               </div>
-            </div --}}>
+            </div>
           </div>
 
           <div class="form-group">
@@ -73,7 +73,7 @@
               </div>
           </div>
 
-          {{-- <div class="form-group">
+           <div class="form-group">
               <label class="small mb-1" for="address"> Address </label>
               <textarea class="form-control @error('password') is-invalid @enderror" name="address" required autocomplete="name" autofocus>{{old('address')}}</textarea>
               @error('address')
@@ -81,7 +81,7 @@
                     <strong>{{ $message }}</strong>
                 </span>
               @enderror
-          </div>--}}
+          </div>
           <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
                 
             <button type="submit" class="btn btn-secondary mainfullbtncolor btn-block"> Create Account </button>
